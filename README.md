@@ -1,27 +1,32 @@
-# PROJECT TITLE
+# DataRobot MLOps guide - Data Drift
 
-TODO: Add a short description of the project.
-It should include the following:
-- What this repository is
-- Who is it for
-- What are the dependencies 
+This repository corresponds to the guide in DataRobot Developers portal that shows you how to monitor data drift in models deployed or monitored with DataRobot MLOps.
+
+You can find the guide at the DataRobot Developers portal: 
 
 ## Usage
 
-TODO: Specify how to use this project
-This can include running the scripts, or where to find API docs if it's a library, command line tool, or similar.
+- Follow the Setup/Installation steps to prepare environment and make sure you have the credentials set
+- Run `python check_data_drift.py` to check the current data drift for features
+- Run `python cause_data_drift.py` to make predictions with drifted data - which will cause data drift
+- Run `python check_data_drift.py` again to compare results
 
 ## Repository Contents
 
-TODO: Specify what this repository contains, for example if it contains multiple self contained sub-projects, like with Notebooks scripts that can be used independently.
-
-In some cases you can skip this section.
+Python scripts and datasets for monitoring data drift
 
 ## Setup/Installation
 
-TODO: Specify what's required to set this project up for usage
+- DataRobot account with MLOps enabled. You can apply for a free account at https://datarobot.com/lp/trial
+- The Auto MPG model trained and deployed. Follow the quick start guide if you haven't yet - https://api-docs.datarobot.com/docs/quickstart-guide
+- Python 3 installed, `venv` created, and dependencies installed:
 
-In some cases you can skip this section.
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+- In `cause_data_drift.py` and `check_data_drift.py` replace missing values with your DataRobot values - API keys, deployment ID, and DataRobot URL.
 
 ## Development and Contributing
 
