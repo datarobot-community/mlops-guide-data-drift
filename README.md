@@ -1,3 +1,5 @@
+**Please note:** The code in these repos is sourced from the DataRobot user community and is not owned or maintained by DataRobot, Inc. You may need to make edits or updates for this code to function properly in your environment.
+
 # DataRobot MLOps guide - Data Drift
 
 This repository corresponds to the guide in DataRobot Developers portal that shows you how to monitor data drift in models deployed or monitored with DataRobot MLOps.
